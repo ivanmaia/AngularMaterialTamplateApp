@@ -3,8 +3,14 @@ A template application I will use for studying Angular and Material
 
 #Dependencies
 
+1-Angular Material
 It depends on Angular Material.
 https://material.angular.io/guide/getting-started 
+
+You'll have to install it using:
+> npm install @angular/material @angular/cdk
+> npm install --save @angular/animations
+
 
 # AngularMaterialApplication
 

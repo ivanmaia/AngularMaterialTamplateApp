@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.example-fill-remaining-space {
+body{
+  margin: 0;
+}
+
+.app-main-toolbar-container{}
+
+.remaining-space-filler {
   flex: 1 1 auto;
 }
