@@ -11,6 +11,11 @@ You'll have to install it using:
 > npm install @angular/material @angular/cdk
 > npm install --save @angular/animations
 
+2 - Hammer.js
+Hammer.js is an optional dependency and helps with touch support for a few of the components.
+> npm install --save hammerjs
+
+
 
 # AngularMaterialApplication
 

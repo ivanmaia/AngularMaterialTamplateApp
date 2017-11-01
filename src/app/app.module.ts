@@ -1,20 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material';
-import { AppMainToolbarComponent } from './app-main-toolbar/app-main-toolbar.component';
+import { CoreModule } from './core/core.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AppMainToolbarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    CoreModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

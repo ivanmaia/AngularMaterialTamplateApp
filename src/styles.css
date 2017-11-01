@@ -1,11 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body{
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
-.app-main-toolbar-container{}
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+mat-toolbar mat-icon {
+  vertical-align: middle;
+}
+
+.toolbar-app-name{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em;
+}
 
 .remaining-space-filler {
   flex: 1 1 auto;
