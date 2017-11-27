@@ -1,0 +1,20 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Applicações 1
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-list>
+    <mat-list-item *ngFor="let item of navItems">
+      <p mat-line><a>{{item.MenuText}}</a></p>
+    </mat-list-item>
+  </mat-list>
+</mat-expansion-panel>
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+      Applicações 2
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <button *ngFor="let item of navItems" mat-button>{{item.MenuText}}</button>
+</mat-expansion-panel>

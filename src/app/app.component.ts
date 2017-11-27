@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AppMainToolbar } from './core/app-main-toolbar/app-main-toolbar.model';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ConfigurationMenuComponent} from './core/configuration-menu/configuration-menu.component';
+import { MainSidenavComponent } from './core/main-sidenav/main-sidenav.component';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,8 @@ import { AppMainToolbar } from './core/app-main-toolbar/app-main-toolbar.model';
 })
 
 export class AppComponent implements OnInit{
-  toolbar = new AppMainToolbar('Teste');
-  title = 'app';
+  title = ''; //..Application Name';
+  logoSrc = 'assets/img/AppLogo.png';
 
-  ngOnInit() {
-    console.log(this.toolbar.AppName);
-  }
+  ngOnInit() { }
 }

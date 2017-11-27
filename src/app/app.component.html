@@ -1,5 +1,19 @@
-<app-app-main-toolbar [appMainToobar]="toolbar"></app-app-main-toolbar>
-<div class="app-actual-content">
-  <h2>App content</h2>
-  <p> lorem ipsum dolor sit amet </p>
+<div class="wrapper">
+  <app-main-toolbar [AppName]="title" [AppLogo]="logoSrc"  [ConfigMenu]="ConfigMenu.TheMenu"
+    [SideNavigator]="TheSideNav"></app-main-toolbar>
+  <app-configuration-menu #ConfigMenu></app-configuration-menu>
+  <div class="page-content">
+    <mat-sidenav-container>
+        <mat-sidenav #TheSideNav mode="over" opened="false" class="app-main-sidenav mat-elevation-z6">
+          <app-main-sidenav #MainSideNav></app-main-sidenav>
+        </mat-sidenav>
+        <div class="app-actual-content">
+          <!--<router-outlet></router-outlet>-->
+          <h1>Main content goes here</h1>
+          <p>teste</p>
+
+
+        </div>
+    </mat-sidenav-container>
+  </div>
 </div>

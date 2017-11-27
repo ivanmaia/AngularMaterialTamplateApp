@@ -1,0 +1,13 @@
+  <mat-toolbar class="mat-elevation-z10" color="primary">
+    <button mat-icon-button>
+      <mat-icon class="mat-36" (click)="toggleNavigator()">menu</mat-icon>
+    </button>
+
+    <img class="toolbar-app-logo" *ngIf="AppLogo" [src]="AppLogo"/>
+    <span *ngIf="!AppLogo && AppName"  class="toolbar-app-name">{{AppName}}</span>
+
+    <button mat-icon-button [matMenuTriggerFor]="this.ConfigMenu">
+      <mat-icon class="mat-36">settings</mat-icon>
+    </button>
+
+  </mat-toolbar>
