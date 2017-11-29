@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { ConfigurationMenuComponent} from './core/configuration-menu/configuration-menu.component';
 import { MainSidenavComponent } from './core/main-sidenav/main-sidenav.component';
+
 
 @Component({
   selector: 'app-root',
