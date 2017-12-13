@@ -14,8 +14,8 @@ import { DashboardComponent } from './features/dashboard/dashboard.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     CoreModule.forRoot(),
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

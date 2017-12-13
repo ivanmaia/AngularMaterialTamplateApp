@@ -1,5 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule,
   MatCardModule, MatSidenavModule, MatExpansionModule} from '@angular/material';
@@ -15,15 +16,18 @@ import { MainMenuItemsService } from './main-sidenav/main-menu-items.service';
       MainSidenavComponent,
     ],
     imports: [
-      CommonModule, FormsModule, ReactiveFormsModule, MatButtonModule,
+      CommonModule, RouterModule, FormsModule, ReactiveFormsModule, MatButtonModule,
       MatMenuModule, MatToolbarModule, MatIconModule, MatCardModule,
       MatSidenavModule, MatExpansionModule
     ],
     exports: [
-      CommonModule, FormsModule, ReactiveFormsModule, MatButtonModule,
-      MatMenuModule, MatToolbarModule, MatIconModule, MatCardModule,
-      MatSidenavModule, MainToolbarComponent, ConfigurationMenuComponent,
-      MainSidenavComponent, MatExpansionModule
+      //Angular
+      CommonModule, RouterModule, FormsModule, ReactiveFormsModule,
+      //Material
+      MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule,
+      MatCardModule, MatSidenavModule, MatExpansionModule,
+      //Application
+      MainToolbarComponent, ConfigurationMenuComponent, MainSidenavComponent
     ],
     providers: [
       MainMenuItemsService

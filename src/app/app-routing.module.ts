@@ -4,7 +4,8 @@ import { DashboardComponent } from "./features/dashboard/dashboard.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'config', loadChildren: './features/configuration/configuration.module#ConfigurationModule' },
 ];
 
 @NgModule({
